@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Warming Ceremony</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#when-where">When & Where</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="header">
+            <img src="house.jpg" alt="House Image">
+        </div>
+        
+        <div class="content">
+            <h1>You're Invited to Our House Warming Ceremony</h1>
+            <h2>Iranna Harakuni & Shoba Harakuni</h2>
+            <p>Please join us as we celebrate our new home!</p>
+
+            <!-- Countdown Timer -->
+            <h3>Countdown to the Event:</h3>
+            <div class="countdown" id="countdown"></div>
+
+            <!-- Event Details -->
+            <h2 id="when-where">When & Where</h2>
+            <p>Date: March 30 & 31, 2025</p>
+            <p>Address: 2182/6, Ramnagar, K.H. Kangrali, APMC Road, Belagavi, Karnataka</p>
+
+            <!-- Gallery Section -->
+            <h2 id="gallery">Gallery</h2>
+            <p>(Add images of the house here)</p>
+
+            <!-- RSVP Form -->
+            <div class="rsvp-form">
+                <p>Please enter your name and confirm your attendance:</p>
+                <input type="text" id="guest-name" placeholder="Enter your name">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWFKPpkKotqRt7SG4fUY-8XrJmAGhvBRTVg34N9IC6L1mayw/viewform?usp=dialog" target="_blank">
+                    <button>Confirm Attendance</button>
+                </a>
+                
+                <p>Or copy the RSVP form link:</p>
+                <input type="text" id="rsvp-link" value="https://docs.google.com/forms/d/e/1FAIpQLSdWFKPpkKotqRt7SG4fUY-8XrJmAGhvBRTVg34N9IC6L1mayw/viewform?usp=dialog" readonly>
+                <button id="copy-link">Copy Link</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Looking forward to celebrating with you!</p>
+    </div>
+
+</body>
+</html>
